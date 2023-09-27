@@ -1,0 +1,103 @@
+.hmywork-container{
+    width: 100%;
+    padding: 40px 0px;
+}
+.hmywork-container .myWork{
+    width: 85%;
+    margin: auto;
+}
+.myWork .heading{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    border-bottom: solid 2px #cacaca;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Tenor Sans';
+}
+.myWork .projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px 0px;
+}
+
+.myWork .projects{
+    max-width: 28%;
+    border: solid 1px #bdbdbd;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.projects .project-image{
+    border-radius: 10px;
+    background-color: white;
+    border: solid 1px #000;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.project-image .pro-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects .project-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.projects .button-cont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.procard-btn{
+    padding: 5px 10px;
+    width: 50%;
+    border-radius: 100px;
+    border: solid 2px;
+    cursor: pointer;
+}
+.procard-btn .inner-btn{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+.pro-active{
+    border: solid 2px #000;
+    width: 50%;
+}
+.pro-desc{
+    font-size: 0.8rem;
+}
+.btn-container{
+    width: 100%;
+    justify-content: center;
+}
+.btn-container .more-btn{
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: solid 2px #808080;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .hmywork-container{
+        margin-top: 60px;
+    }
+    .projects-container{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .myWork .projects{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

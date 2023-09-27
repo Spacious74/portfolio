@@ -1,0 +1,23 @@
+.thankcontainer{
+    height: 80vh;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.thankcontainer img{
+    width: 30%;
+}
+.thankcontainer .thank-text{
+    font-size: 2rem;
+    color: #000;
+}
+
+@media screen and (max-width : 768px) {
+    .thankcontainer img{
+        width: 100%;
+    }
+    .thankcontainer .thank-text{
+        text-align: center;
+        width: 90%;
+    }
+}

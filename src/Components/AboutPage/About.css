@@ -1,0 +1,186 @@
+.head{
+    font-size: 1.5rem;
+    font-family: "Tenor Sans";
+    font-weight: bolder;
+}
+.skill-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aboutMeContainer{
+    width: 100%;
+    padding-top: 30px;
+}
+.aboutMeContainer .about-image-cont{
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #f8f8ff;
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    overflow: hidden;
+}
+.about-image-cont .ab-img{
+    width: 30%;
+    filter: drop-shadow(0px 0px 3px #fff);
+}
+.about-image-cont .iconimg{
+    width: 20%;
+    filter: drop-shadow(0px 0px 2px #fff);
+}
+.aboutMeContainer .about-text{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+}
+.aboutMeContainer .about-text .heading{
+    font-size: 1.5rem;
+    font-family: "Tenor Sans";
+    font-weight: bolder;
+    width: 100%;
+}
+.aboutMeContainer .about-text .heading img{
+    width: 40px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.aboutMeContainer .about-text .smtext{
+    width: 70%;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.skills-container{
+    margin: auto;
+    margin-top: 40px;
+}
+.skills-container .skills{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+.skills-container .skills .heading{
+    font-size: 1.3rem;
+    font-family: "Tenor Sans";
+}
+.skills-container .skills .innerskills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0px;
+}
+.skills-container .innerskills .skill{
+    display: flex;
+    align-items: center;
+    border: solid 1px #808080;
+    border-radius: 10px;
+    padding: 5px 15px;
+    width: 15%;
+    height: 50px;
+    gap: 20px;
+}
+.skill .skill-logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.skill .skill-logo .skillimg{
+    width: 100%;
+}
+
+.ach-container{
+    margin: auto;
+    padding-bottom: 40px;
+}
+.ach-container .heading{
+    width: 85%;
+    margin: auto;
+}
+.ach-container .achieves{
+    margin-top: 20px;
+}
+.achieves{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    gap: 40px;
+}
+.achieves .ach{
+    width: 45%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.ach .ach-img{
+    width: 100%;
+    border: solid 1px #000;
+    border-radius: 10px;
+}
+.ach .ach-title{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.randomFacts .heading{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.randomFacts .fact-cont{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fact-cont .fact{
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    width: 85%;
+    height: 50px;
+}
+.fact-cont .shuffle{
+    padding: 5px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-image-cont .ab-img{
+        width: 50%;
+    }
+    .aboutMeContainer .about-text .smtext{
+        width: 100%;
+    }
+    .skills-container .innerskills .skill{
+        width: 38%;
+        gap: 10px;
+    }
+    .skill .skill-logo{
+        width: 30%;
+    }
+    .achieves .ach{
+        width: 100%;
+    }
+    .randomFacts .fact-cont{
+        flex-direction: column;
+        align-items: start;
+    }
+    .fact-cont .fact{
+        width: 100%;
+        height: 100px;
+    }
+
+}

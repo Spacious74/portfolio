@@ -1,0 +1,53 @@
+import React, { useContext } from 'react'
+import './Homepage.css'
+import { Link } from 'react-router-dom'
+import ThemeContext from '../../themeContext'
+import HAboutme from './HAboutme'
+import HMyWork from './HMyWork'
+import Contact from './Contact'
+import Footer from '../Footer/Footer'
+
+function Homepage() {
+  
+  const contextTheme = useContext(ThemeContext);
+  const accColor = contextTheme.accColor;
+  const backStyle  = {
+    backgroundColor: contextTheme.lightmode ? "#fff" : "#26242C",
+    color : contextTheme.lightmode ? "#000" : "#fff",
+    borderColor : contextTheme.lightmode ? "#000" : "#fff"
+  }
+
+
+  
+  return (
+    <div className="outerHomeCont" style={backStyle}>
+        <div className="textSection fxcn">
+          <div className="smtxt">
+            <img className='icons' src="https://img.icons8.com/office/30/000000/so-so.png" alt="so-so"/> Hi, I'm Vishal,
+          </div>
+          <div className="bgtxt">
+              Crafting <span className="txtunderline"
+              style={{
+                backgroundImage: `linear-gradient(90deg, ${accColor}, ${accColor})`
+              }}>Full Stack</span>&nbsp;
+              Experiences 
+              with Creativity.
+          </div>
+          <div  className='btnContainer fxcn'>
+            <Link to="/mywork">
+              <button className="mainbtn"
+              style={{
+                backgroundColor: accColor
+              }}>My Projects <i className="fa-solid fa-arrow-right-long"></i></button>
+            </Link>
+          </div>
+        </div>
+        <HAboutme />
+        <HMyWork />
+        <Contact />
+        <Footer />
+    </div>
+  )
+}
+
+export default Homepage

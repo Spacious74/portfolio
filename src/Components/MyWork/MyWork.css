@@ -1,0 +1,19 @@
+.workcontainer{
+    width: 100%;
+}
+.workcontainer .mainheading{
+  width: 85%;
+  margin: auto;
+  padding: 50px 0px 30px 0px;
+  border-bottom: solid 1px #cacaca;
+}
+.myWork{
+    width: 85%;
+    margin: auto;
+}
+.myWork .subheading{
+    font-size: 2rem;
+    font-family: "Tenor Sans";
+    font-weight: bolder;
+    padding-top: 20px;
+}
