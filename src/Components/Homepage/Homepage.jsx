@@ -7,6 +7,8 @@ import HMyWork from './HMyWork'
 import Contact from './Contact'
 import Footer from '../Footer/Footer'
 
+import {motion} from 'framer-motion'
+
 function Homepage() {
   
   const contextTheme = useContext(ThemeContext);
@@ -25,14 +27,19 @@ function Homepage() {
           <div className="smtxt">
             <img className='icons' src="https://img.icons8.com/office/30/000000/so-so.png" alt="so-so"/> Hi, I'm Vishal,
           </div>
-          <div className="bgtxt">
+          <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration : 0.8 }}
+
+          className="bgtxt">
               Crafting <span className="txtunderline"
               style={{
                 backgroundImage: `linear-gradient(90deg, ${accColor}, ${accColor})`
               }}>Full Stack</span>&nbsp;
               Experiences 
               with Creativity.
-          </div>
+          </motion.div>
           <div  className='btnContainer fxcn'>
             <Link to="/mywork">
               <button className="mainbtn"

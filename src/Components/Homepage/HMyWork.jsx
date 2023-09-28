@@ -6,6 +6,8 @@ import wordpress from '../../Resources/Web Projects/wordpress raw.png'
 import iphone from '../../Resources/Web Projects/iPhone raw.png'
 import spline from '../../Resources/Web Projects/spline raw.png'
 import { Link } from 'react-router-dom'
+import {motion} from 'framer-motion'
+
 
 import ThemeContext from '../../themeContext'
 
@@ -28,7 +30,11 @@ function HMyWork() {
         <div className="projects-container">
 
             {/* Show box */}
-            <div className="projects" style={backStyle}>
+            <motion.div
+            initial={{ opacity: 0, transform : "translateY(140px)" }}
+            whileInView={{ opacity: 1, transform : "translateY(0px)" }}
+
+             className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={show} alt="show box website screenshot" className='pro-img' />
                 </div>
@@ -48,10 +54,14 @@ function HMyWork() {
                 <button className='procard-btn'
                     style={backStyle}>Project Info</button>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Shopping bag */}
-            <div className="projects" style={backStyle}>
+            <motion.div 
+            initial={{ opacity: 0, transform : "translateY(140px)" }}
+            whileInView={{ opacity: 1, transform : "translateY(0px)" }}
+
+            className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={shopping} alt="show box website screenshot" className='pro-img' />
                 </div>
@@ -71,10 +81,15 @@ function HMyWork() {
                     <button className='procard-btn'
                     style={backStyle}>Project Info</button>
                 </div>
-            </div>
+            </motion.div>
 
             {/* IPhone clone */}
-            <div className="projects" style={backStyle}>
+            <motion.div 
+            initial={{ opacity: 0, transform : "translateY(140px)" }}
+            whileInView={{ opacity: 1, transform : "translateY(0px)" }}
+
+            className="projects" style={backStyle}>
+
                 <div className="project-image">
                     <img src={iphone} alt="show box website screenshot" className='pro-img' />
                 </div>
@@ -94,10 +109,14 @@ function HMyWork() {
                     <button className='procard-btn'
                     style={backStyle}>Project Info</button>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Wordpress website */}
-            <div className="projects" style={backStyle}>
+            <motion.div 
+            initial={{ opacity: 0, transform : "translateY(140px)" }}
+            whileInView={{ opacity: 1, transform : "translateY(0px)" }}
+
+            className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={wordpress} alt="show box website screenshot" className='pro-img' />
                 </div>
@@ -117,10 +136,14 @@ function HMyWork() {
                     <button className='procard-btn'
                     style={backStyle}>Project Info</button>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Spline */}
-            <div className="projects" style={backStyle}>
+            <motion.div 
+            initial={{ opacity: 0, transform : "translateY(140px)" }}
+            whileInView={{ opacity: 1, transform : "translateY(0px)" }}
+
+            className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={spline} alt="show box website screenshot" className='pro-img' />
                 </div>
@@ -140,13 +163,16 @@ function HMyWork() {
                     <button className='procard-btn'
                     style={backStyle}>Project Info</button>
                 </div>
-            </div>
+            </motion.div>
         </div>
-        <div className="btn-container fxcn">
+        <motion.div 
+        initial={{ opacity: 0, transform : "translateY(140px)" }}
+        whileInView={{ opacity: 1, transform : "translateY(0px)" }}
+        className="btn-container fxcn">
             <Link to="/mywork">
                 <button className="more-btn" style={backStyle}>View more...</button>
             </Link>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

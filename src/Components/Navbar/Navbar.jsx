@@ -3,6 +3,7 @@ import './Navbar.css'
 import DarkLightMode from '../DarkLight/DarkLightMode'
 import { NavLink, Link } from 'react-router-dom'
 import ThemeContext from '../../themeContext'
+import {motion, useScroll} from 'framer-motion'
 
 const Navbar = ()=> {
 
@@ -35,7 +36,7 @@ const Navbar = ()=> {
         backgroundColor: contextTheme.lightmode ? "#f1f0f3" : "#17161d",
         transform : hamClick ? "translateY(0px)" : "translateY(-800px)"
     }
-
+    const { scrollYProgress } = useScroll();
 
   return (
     <div className='nav-container' style={backStyle}>
@@ -144,6 +145,7 @@ const Navbar = ()=> {
         </div>
         </div>
       </nav>
+      <motion.div style={{ scaleX: scrollYProgress, backgroundColor : accColor, height : "4px" }} />  
 
 
       <nav className="res-nav-link-cont" style={navStyle}>
