@@ -4,27 +4,8 @@ import facts from '../../facts'
 import Footer from '../Footer/Footer'
 import profilepic from '../../Resources/profile pic background less.png'
 import ThemeContext from '../../themeContext'
-import star from '../../Resources/star.png'
-// skills imgs
-import html from '../../Resources/skills/html.png'
-import css from '../../Resources/skills/css.png'
-import javascript from '../../Resources/skills/javascript.png'
-import bootstrap from '../../Resources/skills/bootstrap.png'
-import reactlogo from '../../Resources/skills/react.png'
-import tailwind from '../../Resources/skills/tailwind.png'
-import nodejs from '../../Resources/skills/node.png'
-import express from '../../Resources/skills/express.png'
-import mongodb from '../../Resources/skills/mongodb.png'
-import mysql from '../../Resources/skills/mysql.png'
-import jest from '../../Resources/skills/jest.png'
+
 import render from '../../Resources/skills/render.svg'
-import netlify from '../../Resources/skills/netlify.png'
-import mongoatlas from '../../Resources/skills/mongoatlas.svg'
-// certificates imgs
-import relevel from '../../Resources/certificates/relevel certificate.jpg'
-import phpc from '../../Resources/certificates/PHP certificate.jpg'
-import jscert from '../../Resources/certificates/javascript certificate.jpg'
-import csscert from '../../Resources/certificates/css certificate.png'
 
 function AboutPage() {
 
@@ -48,6 +29,7 @@ function AboutPage() {
   }
 
   const [randomFact, setRandomFact] = useState('');
+  const [randno, setRandno] = useState();
 
   useEffect(() => {
     generateRandomFact();
@@ -55,6 +37,7 @@ function AboutPage() {
 
   const generateRandomFact = () => {
     const randomIndex = Math.floor(Math.random() * facts.length);
+    setRandno(randomIndex);
     setRandomFact(facts[randomIndex]);
   };
 
@@ -68,7 +51,7 @@ function AboutPage() {
 
       <div className="about-text">
         <div className="heading">
-          <img src={star} alt="" />
+        <img className='skill-icon' src="https://img.icons8.com/color/50/sparkling.png" alt="sparkling"/>&nbsp;
           I design digital interfaces</div>
         <div className="smtext">
           As i've discussed that from my early college days, I've been fascinated by the GUI of Web Apps, Android OS and iOS design language and always have a desire to customize some elements in my style but it is only possible after learning a stack.
@@ -90,7 +73,7 @@ function AboutPage() {
           <div className="innerskills">
             <div className="skill">
               <div className="skill-logo">
-                <img src={html} alt="html-logo" className="skillimg" />
+                <img src="https://img.icons8.com/color/40/html-5--v1.png" alt="html-5--v1"/>
               </div>
               <div className="skillname">
                 HTML5
@@ -98,7 +81,7 @@ function AboutPage() {
             </div>
             <div className="skill">
               <div className="skill-logo">
-                <img src={css} alt="css-logo" className="skillimg" />
+              <img src="https://img.icons8.com/color/40/css3.png" alt="css3"/>
               </div>
               <div className="skillname">
                 CSS3
@@ -106,7 +89,7 @@ function AboutPage() {
             </div>
             <div className="skill">
               <div className="skill-logo">
-                <img src={javascript} alt="javascript-logo" className="skillimg" />
+              <img src="https://img.icons8.com/color/40/javascript--v1.png" alt="javascript--v1"/>
               </div>
               <div className="skillname">
                 Javascript
@@ -114,7 +97,7 @@ function AboutPage() {
             </div>
             <div className="skill">
               <div className="skill-logo">
-                <img src={reactlogo} alt="react-logo" className="skillimg" />
+                <img src="https://img.icons8.com/officexs/40/react.png" alt="react"/>  
               </div>
               <div className="skillname">
                 ReactJS
@@ -122,7 +105,7 @@ function AboutPage() {
             </div>
             <div className="skill">
               <div className="skill-logo">
-                <img src={bootstrap} alt="bootstrap-logo" className="skillimg" />
+                <img src="https://img.icons8.com/color-glass/40/bootstrap.png" alt="bootstrap"/>
               </div>
               <div className="skillname">
                 Bootstrap
@@ -130,7 +113,7 @@ function AboutPage() {
             </div>
             <div className="skill">
               <div className="skill-logo">
-                <img src={tailwind} alt="tailwind-logo" className="skillimg" />
+                <img src="https://img.icons8.com/fluency/40/tailwind_css.png" alt="tailwind_css"/>
               </div>
               <div className="skillname">
                 Tailwind CSS
@@ -141,8 +124,8 @@ function AboutPage() {
           <div className="heading">Backend</div>
           <div className="innerskills">
             <div className="skill">
-            <div className="skill-logo">
-                <img src={nodejs} alt="nodejs-logo" className="skillimg" />
+              <div className="skill-logo">
+                <img src="https://img.icons8.com/color/40/nodejs.png" alt="nodejs"/>
               </div>
               <div className="skillname">
                 Nodejs
@@ -150,7 +133,7 @@ function AboutPage() {
             </div>
             <div className="skill">
             <div className="skill-logo">
-                <img src={express} alt="expressjs-logo" className="skillimg" />
+              <img src="https://img.icons8.com/color/40/express-js.png" alt="express-js"/>
               </div>
               <div className="skillname">
                 Express.js
@@ -158,7 +141,7 @@ function AboutPage() {
             </div>
             <div className="skill">
             <div className="skill-logo">
-                <img src={mongodb} alt="mongodb-logo" className="skillimg" />
+              <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/40/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png" alt="external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo"/>
               </div>
               <div className="skillname">
                 MongoDB
@@ -166,7 +149,7 @@ function AboutPage() {
             </div>
             <div className="skill">
             <div className="skill-logo">
-                <img src={mysql} alt="mysql-logo" className="skillimg" />
+            <img src="https://img.icons8.com/fluency/40/mysql-logo.png" alt="mysql-logo"/>
               </div>
               <div className="skillname">
                 MySQL
@@ -179,7 +162,7 @@ function AboutPage() {
           <div className="innerskills">
             <div className="skill">
             <div className="skill-logo">
-                <img src={jest} alt="jest-logo" className="skillimg" />
+                <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo.png" alt="jest logo"/>
               </div>
               <div className="skillname">
                 Jest
@@ -199,7 +182,7 @@ function AboutPage() {
             </div>
             <div className="skill">
               <div className="skill-logo">
-                <img className='skillimg' src="https://img.icons8.com/fluency/48/github.png" alt="github"/>
+              <img src="https://img.icons8.com/windows/40/github.png" alt="github"/>
               </div>
               <div className="skillname">
                 GitHub Pages
@@ -207,7 +190,7 @@ function AboutPage() {
             </div>
             <div className="skill">
               <div className="skill-logo">
-                <img src={netlify} alt="netlify-logo" className="skillimg" />
+                <img src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/40/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-green-tal-revivo.png" alt="netlify hosting"/>
               </div>
               <div className="skillname">
                 Netlify
@@ -215,7 +198,7 @@ function AboutPage() {
             </div>
             <div className="skill">
               <div className="skill-logo">
-                <img src={mongoatlas} alt="mongoatlas-logo" className="skillimg" />
+              <img src="https://img.icons8.com/color/40/mongodb.png" alt="mongodb"/>
               </div>
               <div className="skillname">
                 Mongo Atlas
@@ -232,19 +215,19 @@ function AboutPage() {
         </div>
         <div className="achieves">
             <div className="ach" style={certStyle}>
-              <img src={relevel} alt="Relevel Certificate" className="ach-img" />
+              <img src={"https://res.cloudinary.com/drrczbcx7/image/upload/v1695882597/Portfolio/relevel_certificate_dexp0c.jpg"} alt="Relevel Certificate" className="ach-img" />
               <div style={cert_titleStyle} className="ach-title">Full Stack Development 405 days training</div>
             </div>
             <div className="ach" style={certStyle}>
-              <img src={phpc} alt="PHP Certificate" className="ach-img" />
+              <img src={"https://res.cloudinary.com/drrczbcx7/image/upload/v1695882596/Portfolio/PHP_certificate_xsrtxc.jpg"} alt="PHP Certificate" className="ach-img" />
               <div style={cert_titleStyle} className="ach-title">PHP with MySQL Development</div>
             </div>
             <div className="ach" style={certStyle}>
-              <img src={jscert} alt="Javascript Certificate" className="ach-img" />
+              <img src={"https://res.cloudinary.com/drrczbcx7/image/upload/v1695882599/Portfolio/javascript_certificate_owazsj.jpg"} alt="Javascript Certificate" className="ach-img" />
               <div style={cert_titleStyle} className="ach-title">Javascript Fundamentals</div>
             </div>
             <div className="ach" style={certStyle}>
-              <img src={csscert} alt="CSS Certificate" className="ach-img" />
+              <img src={"https://res.cloudinary.com/drrczbcx7/image/upload/v1695882600/Portfolio/css_certificate_wyouq3.png"} alt="CSS Certificate" className="ach-img" />
               <div style={cert_titleStyle} className="ach-title">CSS Fundamentals</div>
             </div>
         </div>
@@ -255,7 +238,9 @@ function AboutPage() {
           <img className='skill-icon' src="https://img.icons8.com/emoji/50/grinning-face-emoji.png" alt="grinning-face-emoji"/> Random facts about me
         </div>
         <div className="fact-cont">
-          <div className="fact" style={{color : accColor}}>{randomFact}</div>
+          <div className="fact" style={{color : accColor}}> <span
+          style={{color : contextTheme.lightmode ? "#000" : "#fff"}}
+          ># {randno+1}/{facts.length}</span> <br /> {randomFact}</div>
           <button style={btnStyle} onClick={generateRandomFact} className="shuffle">
             <i className="fa-solid fa-shuffle"></i> One more
           </button>

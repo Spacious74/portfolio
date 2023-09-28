@@ -41,12 +41,6 @@
     font-weight: bolder;
     width: 100%;
 }
-.aboutMeContainer .about-text .heading img{
-    width: 40px;
-    margin-right: 20px;
-    display: inline-block;
-    vertical-align: middle;
-}
 .aboutMeContainer .about-text .smtext{
     width: 70%;
     margin-top: 20px;
