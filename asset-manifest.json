@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.80f52960.css",
+    "main.js": "/my-portfolio/static/js/main.594892c9.js",
+    "static/js/787.aeca62f9.chunk.js": "/my-portfolio/static/js/787.aeca62f9.chunk.js",
+    "static/media/profile pic background less.png": "/my-portfolio/static/media/profile pic background less.34323c580c88b6e23dfe.png",
+    "static/media/show box raw.png": "/my-portfolio/static/media/show box raw.2129e6629b5bdb181330.png",
+    "static/media/shopping bag raw.png": "/my-portfolio/static/media/shopping bag raw.e78477136202e5acfd07.png",
+    "static/media/iPhone raw.png": "/my-portfolio/static/media/iPhone raw.95d82a8ace7f4307dc0a.png",
+    "static/media/wordpress raw.png": "/my-portfolio/static/media/wordpress raw.72defbfd95e905c6a314.png",
+    "static/media/stone paper.png": "/my-portfolio/static/media/stone paper.3ee2cc07ceabbeeaad40.png",
+    "static/media/spline raw.png": "/my-portfolio/static/media/spline raw.3cea400b9596548dc3c8.png",
+    "static/media/quiz app.png": "/my-portfolio/static/media/quiz app.72ac8b6e7497889716d4.png",
+    "static/media/tic tac toe.png": "/my-portfolio/static/media/tic tac toe.01503467a4bb4f1e5468.png",
+    "static/media/Add a subheading.png": "/my-portfolio/static/media/Add a subheading.b79d55d9dcdbda79426a.png",
+    "static/media/google search clone raw.png": "/my-portfolio/static/media/google search clone raw.bad2a562105f7ae6ba8e.png",
+    "static/media/render.svg": "/my-portfolio/static/media/render.91be39751ec02e5f4ff2d6ff2f8f3305.svg",
+    "index.html": "/my-portfolio/index.html",
+    "main.80f52960.css.map": "/my-portfolio/static/css/main.80f52960.css.map",
+    "main.594892c9.js.map": "/my-portfolio/static/js/main.594892c9.js.map",
+    "787.aeca62f9.chunk.js.map": "/my-portfolio/static/js/787.aeca62f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80f52960.css",
+    "static/js/main.594892c9.js"
+  ]
+}
