@@ -1,3 +1,7 @@
+.icons{
+    display: inline;
+    vertical-align: middle;
+}
 .outerHomeCont{
     width: 100%;
 }
@@ -12,6 +16,7 @@
     font-size: 1.2rem;
     letter-spacing: 1px;
     text-align: center;
+    margin-bottom: 15px;
 }
 .textSection .bgtxt{
     font-size: 4rem;

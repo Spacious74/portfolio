@@ -19,6 +19,7 @@ a{
     margin: auto;
     padding: 12px 0px;
     position: relative;
+    color: #5bbd42;
 }
 .colorDropdown{
     width: 25px;
@@ -50,7 +51,6 @@ a{
     font-size: 1.4rem;
     font-weight: 600;
     border: solid 2px;
-    color: #000000;
     border-radius: 100px;
     width: 80px;
     justify-content: center;
@@ -101,7 +101,7 @@ a{
 
 
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
 
     .navbar{
         width: 95%;

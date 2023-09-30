@@ -25,7 +25,7 @@ function Homepage() {
     <div className="outerHomeCont" style={backStyle}>
         <div className="textSection fxcn">
           <div className="smtxt">
-            <img className='icons' src="https://img.icons8.com/office/30/000000/so-so.png" alt="so-so"/> Hi, I'm Vishal,
+          <img src="https://img.icons8.com/officexs/32/so-so.png" alt="so-so"/> <br /> Hi, I'm Vishal,
           </div>
           <motion.div 
           initial={{ opacity: 0 }}

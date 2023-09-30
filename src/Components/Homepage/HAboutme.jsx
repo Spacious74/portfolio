@@ -20,13 +20,15 @@ function HAboutme() {
           initial={{ opacity: 0, transform : "translateY(140px)" }}
           whileInView={{ opacity: 1, transform : "translateY(0px)" }}
           transition={{ duration : 0.5 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="heading">About me</motion.div>
 
           <motion.p
           initial={{ opacity: 0, transform : "translateY(140px)" }}
           whileInView={{ opacity: 1, transform : "translateY(0px)" }}
           transition={{ duration : 0.5 }}
-          ><img className='icons' src="https://img.icons8.com/office/25/000000/so-so.png" alt="Waving hand icon "/> Hello and Welcome to my portfolio, 
+          viewport={{ once: true, amount: 0.8 }}
+          >Hello and Welcome to my portfolio, 
            My name is Vishal Savita and 
            I'm specializing <span className="btext">
              <span style={{color : "#00EC65"}}>M</span>
@@ -40,6 +42,7 @@ function HAboutme() {
              initial={{ opacity: 0, transform : "translateY(140px)" }}
              whileInView={{ opacity: 1, transform : "translateY(0px)" }}
              transition={{ duration : 0.5 }}
+            viewport={{ once: true, amount: 0.8 }}
              >From my early college days, I've been 
                fascinated by the GUI of Web Apps,
                Android OS and iOS design language and always have a desire to customize some
@@ -51,6 +54,7 @@ function HAboutme() {
              initial={{ opacity: 0, transform : "translateY(140px)" }}
              whileInView={{ opacity: 1, transform : "translateY(0px)" }}
              transition={{ duration : 0.5 }}
+            viewport={{ once: true, amount: 0.8 }}
              >So, My journey started with learning HTML, CSS and JavaScript and continues to learn NodeJS, ExpressJS, ReactJS and Mongodb
                like frameworks and libraries and is still learning new features of this tech stack.
                In this journey I’ve acquired a diverse set of skills with various softwares and technologies.
@@ -61,7 +65,7 @@ function HAboutme() {
              initial={{ opacity: 0, transform : "translateY(100px)" }}
              whileInView={{ opacity: 1, transform : "translateY(0px)" }}
              transition={{ type : "spring", stiffness : 100 }}
-             viewport={{ once: true }}
+             viewport={{ once: true, amount: 0.8 }}
               className="fxcn btnPara" >
               <Link to="/aboutme">
                <button className="mainbtn"

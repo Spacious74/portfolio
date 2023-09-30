@@ -24,6 +24,7 @@ function Contact() {
       initial={{ opacity: 0, transform : "translateY(140px)" }}
       whileInView={{ opacity: 1, transform : "translateY(0px)" }}
       transition={{ duration : 0.5 }}
+          viewport={{ once: true, amount: 0.8 }}
       className="heading">Contact me</motion.div>
       <div className="formandimg">
         <form className="contactForm" action="https://formsubmit.co/vishalsavita809018@gmail.com" method="POST">
@@ -32,6 +33,7 @@ function Contact() {
           initial={{ opacity: 0, transform : "translateY(140px)" }}
           whileInView={{ opacity: 1, transform : "translateY(0px)" }}
           transition={{ duration : 0.5 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="input-field">
             <label htmlFor="name" style={{color : accColor}}>Name</label>
             <input type="text" name="name" id="name"  style={backStyle} />
@@ -41,6 +43,7 @@ function Contact() {
           initial={{ opacity: 0, transform : "translateY(140px)" }}
           whileInView={{ opacity: 1, transform : "translateY(0px)" }}
           transition={{ duration : 0.5 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="input-field">
             <label htmlFor="email" style={{color : accColor}}>Your email</label>
             <input type="email" name="email" id="email"  style={backStyle} />
@@ -50,17 +53,18 @@ function Contact() {
           initial={{ opacity: 0, transform : "translateY(140px)" }}
           whileInView={{ opacity: 1, transform : "translateY(0px)" }}
           transition={{ duration : 0.5 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="input-field">
             <label htmlFor="message" style={{color : accColor}}>Message</label>
             <textarea  name="message" style={backStyle}  id="message" 
             cols="30" rows="5"></textarea>
           </motion.div>
-          <input type="hidden" name="_next" value="http://localhost:3000/form-submitted" />
           <input type="hidden" name="_captcha" value="false" />
           <motion.button 
           initial={{ opacity: 0, transform : "translateY(140px)" }}
           whileInView={{ opacity: 1, transform : "translateY(0px)" }}
           transition={{ duration : 0.5 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="mainbtn" 
           style={{marginTop : "0px", backgroundColor : accColor}}
           >Send <i className='fa-solid fa-paper-plane'></i></motion.button>

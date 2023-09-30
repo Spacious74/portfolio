@@ -22,6 +22,11 @@ function HMyWork() {
         color : contextTheme.lightmode ? "#000" : "#fff",
         borderColor : accColor
     }
+    
+    const projectInfoStyle = {
+        color : accColor,
+        border : "solid 1px" + accColor
+    }
 
   return (
     <div className='hmywork-container'>
@@ -33,7 +38,8 @@ function HMyWork() {
             <motion.div
             initial={{ opacity: 0, transform : "translateY(140px)" }}
             whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-
+            transition={{duration : 0.5}}
+            viewport={{ once: true, amount: 0.8 }}
              className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={show} alt="show box website screenshot" className='pro-img' />
@@ -51,8 +57,12 @@ function HMyWork() {
                         Visit Project
                     </button>
                 </Link>
-                <button className='procard-btn'
-                    style={backStyle}>Project Info</button>
+                <Link  to = "/project-info/1"
+                    className='procard-btn' style={projectInfoStyle}>
+                    <button className='inner-btn' style={{color : accColor}}>
+                        Project Info
+                    </button>
+                </Link>
                 </div>
             </motion.div>
 
@@ -60,7 +70,8 @@ function HMyWork() {
             <motion.div 
             initial={{ opacity: 0, transform : "translateY(140px)" }}
             whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-
+            transition={{duration : 0.5}}
+            viewport={{ once: true, amount: 0.8 }}
             className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={shopping} alt="show box website screenshot" className='pro-img' />
@@ -78,8 +89,12 @@ function HMyWork() {
                         Visit Project
                     </button>
                 </Link>
-                    <button className='procard-btn'
-                    style={backStyle}>Project Info</button>
+                <Link  to = "/project-info/2"
+                    className='procard-btn' style={projectInfoStyle}>
+                    <button className='inner-btn' style={{color : accColor}}>
+                        Project Info
+                    </button>
+                </Link>
                 </div>
             </motion.div>
 
@@ -87,7 +102,8 @@ function HMyWork() {
             <motion.div 
             initial={{ opacity: 0, transform : "translateY(140px)" }}
             whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-
+            transition={{duration : 0.5}}
+            viewport={{ once: true, amount: 0.8 }}
             className="projects" style={backStyle}>
 
                 <div className="project-image">
@@ -106,8 +122,12 @@ function HMyWork() {
                             Visit Project
                         </button>
                     </Link>
-                    <button className='procard-btn'
-                    style={backStyle}>Project Info</button>
+                    <Link  to = "/project-info/5"
+                    className='procard-btn' style={projectInfoStyle}>
+                    <button className='inner-btn' style={{color : accColor}}>
+                        Project Info
+                    </button>
+                    </Link>
                 </div>
             </motion.div>
 
@@ -115,7 +135,8 @@ function HMyWork() {
             <motion.div 
             initial={{ opacity: 0, transform : "translateY(140px)" }}
             whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-
+            transition={{duration : 0.5}}
+            viewport={{ once: true, amount: 0.8 }}
             className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={wordpress} alt="show box website screenshot" className='pro-img' />
@@ -133,8 +154,12 @@ function HMyWork() {
                             Visit Project
                         </button>
                     </Link>
-                    <button className='procard-btn'
-                    style={backStyle}>Project Info</button>
+                    <Link  to = "/project-info/10"
+                    className='procard-btn' style={projectInfoStyle}>
+                    <button className='inner-btn' style={{color : accColor}}>
+                        Project Info
+                    </button>
+                    </Link>
                 </div>
             </motion.div>
 
@@ -142,7 +167,8 @@ function HMyWork() {
             <motion.div 
             initial={{ opacity: 0, transform : "translateY(140px)" }}
             whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-
+            transition={{duration : 0.5}}
+            viewport={{ once: true, amount: 0.8 }}
             className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={spline} alt="show box website screenshot" className='pro-img' />
@@ -160,14 +186,20 @@ function HMyWork() {
                             Visit Project
                         </button>
                     </Link>
-                    <button className='procard-btn'
-                    style={backStyle}>Project Info</button>
+                    <Link  to = "/project-info/9"
+                    className='procard-btn' style={projectInfoStyle}>
+                    <button className='inner-btn' style={{color : accColor}}>
+                        Project Info
+                    </button>
+                    </Link>
                 </div>
             </motion.div>
         </div>
         <motion.div 
         initial={{ opacity: 0, transform : "translateY(140px)" }}
         whileInView={{ opacity: 1, transform : "translateY(0px)" }}
+        transition={{duration : 0.5}}
+            viewport={{ once: true, amount: 0.8 }}
         className="btn-container fxcn">
             <Link to="/mywork">
                 <button className="more-btn" style={backStyle}>View more...</button>

@@ -55,7 +55,6 @@
     padding: 5px 10px;
     width: 50%;
     border-radius: 100px;
-    border: solid 2px;
     cursor: pointer;
 }
 .procard-btn .inner-btn{
@@ -68,7 +67,7 @@
     font-weight: bolder;
 }
 .pro-active{
-    border: solid 2px #000;
+    border: solid 1px #fff;
     width: 50%;
 }
 .pro-desc{

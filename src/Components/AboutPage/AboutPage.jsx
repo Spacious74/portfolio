@@ -239,7 +239,7 @@ function AboutPage() {
         </div>
         <div className="fact-cont">
           <div className="fact" style={{color : accColor}}> <span
-          style={{color : contextTheme.lightmode ? "#000" : "#fff"}}
+          style={{color : contextTheme.lightmode ? "#000" : "#fff", fontSize : "0.8rem"}}
           ># {randno+1}/{facts.length}</span> <br /> {randomFact}</div>
           <button style={btnStyle} onClick={generateRandomFact} className="shuffle">
             <i className="fa-solid fa-shuffle"></i> One more

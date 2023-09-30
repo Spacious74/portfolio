@@ -15,9 +15,10 @@ const facts = [
     "My first online coding teacher is 'Saurabh Shukla Sir' at youtube 'MySirG.com'.",
     "I'de love to do some DIY craft work in my free time.",
     "I love to make flipbooks.",
-    "I can type upto 70 words per minute.",
+    "I can type upto 75 words per minute.",
     "Love to create posters in Canva.",
-    "I find solace in the thought-provoking 'Kali vs Kalki' poetry by 'Ashutosh Rana'."
+    "I find solace in the thought-provoking 'Kali vs Kalki' poetry by 'Ashutosh Rana'.",
+    "If I'm not a web developer then I would be an automobile designer."
 ];
 
 export default facts

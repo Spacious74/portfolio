@@ -42,7 +42,9 @@ const Navbar = ()=> {
     <div className='nav-container' style={backStyle}>
       <nav className="navbar fxcn">
         <div className="left">
-            <div style={backStyle} className="logo fxcn">VS.</div>
+            <Link to="/" >
+                <div style={backStyle} className="logo fxcn">VS.</div>
+            </Link>
         </div>
         <div className="right fxcn" >
 
@@ -145,11 +147,17 @@ const Navbar = ()=> {
         </div>
         </div>
       </nav>
-      <motion.div style={{ scaleX: scrollYProgress, backgroundColor : accColor, height : "4px" }} />  
+        <motion.div style={{ 
+            scaleX: scrollYProgress, 
+            backgroundColor : accColor, 
+            height : "2px",
+            zIndex: 90,
+            transformOrigin: "0%"
+        }}></motion.div>  
 
 
       <nav className="res-nav-link-cont" style={navStyle}>
-            <NavLink to={"/"} className={({ isActive, isPending }) =>
+            <NavLink onClick={()=>{setHamClick(!hamClick)}} to={"/"} className={({ isActive, isPending }) =>
                 isActive ? "navitems underline active" : "navitems underline"
             } style={({ isActive, isPending }) => {
                 return {
@@ -161,7 +169,7 @@ const Navbar = ()=> {
                 Home
             </NavLink>
 
-            <NavLink to={"/mywork"} className={({ isActive, isPending }) =>
+            <NavLink onClick={()=>{setHamClick(!hamClick)}} to={"/mywork"} className={({ isActive, isPending }) =>
                 isActive ? "navitems underline active" : "navitems underline"
             } style={({ isActive, isPending }) => {
                 return {
@@ -173,7 +181,7 @@ const Navbar = ()=> {
                My Work
             </NavLink>
 
-            <NavLink to={"/aboutme"} className={({ isActive, isPending }) =>
+            <NavLink onClick={()=>{setHamClick(!hamClick)}} to={"/aboutme"} className={({ isActive, isPending }) =>
                 isActive ? "navitems underline active" : "navitems underline"
             } style={({ isActive, isPending }) => {
                 return {
@@ -185,7 +193,7 @@ const Navbar = ()=> {
                About me
             </NavLink>
 
-            <Link style={
+            <Link onClick={()=>{setHamClick(!hamClick)}} style={
                 {
                     backgroundColor: contextTheme.lightmode ? "#f1f0f3" : "#17161d",
                     color : contextTheme.lightmode ? "#000" : "#fff",
