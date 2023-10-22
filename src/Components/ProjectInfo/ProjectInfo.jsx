@@ -17,11 +17,11 @@ import spline from '../../Resources/Web Projects/spline.png'
 import wordpress from '../../Resources/Web Projects/wordpress edited.png'
 import ThemeContext from '../../themeContext'
 import {motion} from 'framer-motion'
-
 const imgArr = [showbox, shoppingbag, googleclone, quizapp , iphone, todo, stonepaper, tictac, spline, wordpress];
 
-function ProjectInfo() {
 
+function ProjectInfo() {
+    
     const [project, setProject] = useState({});
     const [proImg, setProImg] = useState();
     const contextTheme = useContext(ThemeContext);
@@ -37,10 +37,11 @@ function ProjectInfo() {
     useEffect(()=>{
 
         setProject(projectInfoArr[pindex-1]);
-        console.log(project);
         setProImg(imgArr[pindex-1]);
 
-    },[pindex, project]);    
+    },[pindex, project]);   
+    
+    
 
 
   return (
@@ -52,7 +53,7 @@ function ProjectInfo() {
                 initial={{ opacity: 0, transform : "translateX(-140px)" }}
                 whileInView={{ opacity: 1, transform : "translateX(0px)" }}
                 transition={{ duration : 0.5 }}
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true, amount: 0 }}
                 src={proImg} alt={project.siteName} />
 
                 <Link to={project.projectLink} target={"_blank"} className="btncont">
@@ -63,17 +64,17 @@ function ProjectInfo() {
                     viewport={{ once: true, amount: 0.8 }}
                     className='visitBtn' style={{backgroundColor : accColor}}>Visit Project&nbsp; <i className="fa-solid fa-paper-plane"></i></motion.button>
                 </Link>
-                
+
             </div>
             <div className="projectInfoText">
                 <motion.div 
-                initial={{ opacity: 0, transform : "translateY(140px)" }}
+                initial={{ opacity: 0, transform : "translateY(100px)" }}
                 whileInView={{ opacity: 1, transform : "translateY(0px)" }}
                 transition={{ duration : 0.5 }}
                 viewport={{ once: true, amount: 0.8 }}
                 className="siteName">{project.siteName}</motion.div>
                 <motion.div 
-                initial={{ opacity: 0, transform : "translateY(140px)" }}
+                initial={{ opacity: 0, transform : "translateY(100px)" }}
                 whileInView={{ opacity: 1, transform : "translateY(0px)" }}
                 transition={{ duration : 0.5, delay : 0.1 }}
                 viewport={{ once: true, amount: 0.8 }}
@@ -85,7 +86,7 @@ function ProjectInfo() {
                     }
                 </motion.div>
                 <motion.div 
-                initial={{ opacity: 0, transform : "translateY(140px)" }}
+                initial={{ opacity: 0, transform : "translateY(100px)" }}
                 whileInView={{ opacity: 1, transform : "translateY(0px)" }}
                 transition={{ duration : 0.5, delay : 0.2 }}
                 viewport={{ once: true, amount: 0.8 }}
@@ -93,7 +94,7 @@ function ProjectInfo() {
                 <span className="proptitle" style={{color : accColor}}><i className="fa-solid fa-clock tech-icon"></i>&nbsp; Duration</span> - {project.duration}
                 </motion.div>
                 <motion.div 
-                initial={{ opacity: 0, transform : "translateY(140px)" }}
+                initial={{ opacity: 0, transform : "translateY(100px)" }}
                 whileInView={{ opacity: 1, transform : "translateY(0px)" }}
                 transition={{ duration : 0.5, delay : 0.3 }}
                 viewport={{ once: true, amount: 0.8 }}
@@ -172,18 +173,7 @@ function ProjectInfo() {
             transition={{ duration : 0.5 }}
             viewport={{ once: true, amount: 0.8 }}
             className="input-field">
-                <label htmlFor="text" style={{color : accColor}}>Project name</label>
-                <input disabled={true} value={project.siteName} type="text" name="text" id="text"  
-                style={backStyle}/>
-            </motion.div>
-
-            <motion.div 
-            initial={{ opacity: 0, transform : "translateY(140px)" }}
-            whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-            transition={{ duration : 0.5 }}
-            viewport={{ once: true, amount: 0.8 }}
-            className="input-field">
-                <label htmlFor="message" style={{color : accColor}}>Feedback</label>
+                <label htmlFor="message" style={{color : accColor}}>Feedback <span style={{color : "#000", fontSize: "0.9rem"}}>(Please mention the project name here)</span></label>
                 <textarea  name="message" style={backStyle}  id="message" 
                 cols="30" rows="5" placeholder='Write your feedback here, It helps me a lot to improve my skills.'></textarea>
             </motion.div>

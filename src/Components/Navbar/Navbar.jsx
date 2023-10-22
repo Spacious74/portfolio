@@ -90,7 +90,7 @@ const Navbar = ()=> {
                     color : contextTheme.lightmode ? "#000" : "#fff",
                     backgroundImage : `linear-gradient(90deg, ${accColor}, ${accColor})`
                 }
-            } to="https://drive.google.com/file/d/1NYObp_b6k8KmwrjPJQkMM7v4YIYIbTDb/view?usp=drive_link" 
+            } to="https://drive.google.com/file/d/1OKkd0lBGWoskgZztY7C-5BpQj7nx_Oiv/view?usp=sharing" 
             className="navitems underline" target={"_blank"}>
                 My resume
             </Link >
@@ -199,7 +199,7 @@ const Navbar = ()=> {
                     color : contextTheme.lightmode ? "#000" : "#fff",
                     backgroundImage : `linear-gradient(90deg, ${accColor}, ${accColor})`
                 }
-            } to="https://drive.google.com/file/d/1NYObp_b6k8KmwrjPJQkMM7v4YIYIbTDb/view?usp=drive_link" 
+            } to="https://drive.google.com/file/d/1OKkd0lBGWoskgZztY7C-5BpQj7nx_Oiv/view?usp=sharing" 
             className="navitems underline" target={"_blank"}>
                 My resume
             </Link >

@@ -18,8 +18,6 @@ function Homepage() {
     color : contextTheme.lightmode ? "#000" : "#fff",
     borderColor : contextTheme.lightmode ? "#000" : "#fff"
   }
-
-
   
   return (
     <div className="outerHomeCont" style={backStyle}>
