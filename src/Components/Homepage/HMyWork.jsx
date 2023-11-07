@@ -70,7 +70,7 @@ function HMyWork() {
             <motion.div 
             initial={{ opacity: 0, transform : "translateY(140px)" }}
             whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-            transition={{duration : 0.5}}
+            transition={{duration : 0.5, delay: 0.2}}
             viewport={{ once: true, amount: 0.8 }}
             className="projects" style={backStyle}>
                 <div className="project-image">
@@ -102,7 +102,7 @@ function HMyWork() {
             <motion.div 
             initial={{ opacity: 0, transform : "translateY(140px)" }}
             whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-            transition={{duration : 0.5}}
+            transition={{duration : 0.5, delay: 0.4}}
             viewport={{ once: true, amount: 0.8 }}
             className="projects" style={backStyle}>
 
@@ -135,7 +135,7 @@ function HMyWork() {
             <motion.div 
             initial={{ opacity: 0, transform : "translateY(140px)" }}
             whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-            transition={{duration : 0.5}}
+            transition={{duration : 0.5, delay: 0.2}}
             viewport={{ once: true, amount: 0.8 }}
             className="projects" style={backStyle}>
                 <div className="project-image">
@@ -167,7 +167,7 @@ function HMyWork() {
             <motion.div 
             initial={{ opacity: 0, transform : "translateY(140px)" }}
             whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-            transition={{duration : 0.5}}
+            transition={{duration : 0.5, delay : 0.4}}
             viewport={{ once: true, amount: 0.8 }}
             className="projects" style={backStyle}>
                 <div className="project-image">
@@ -195,16 +195,12 @@ function HMyWork() {
                 </div>
             </motion.div>
         </div>
-        <motion.div 
-        initial={{ opacity: 0, transform : "translateY(140px)" }}
-        whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-        transition={{duration : 0.5}}
-            viewport={{ once: true, amount: 0.8 }}
+        <div 
         className="btn-container fxcn">
             <Link to="/mywork">
                 <button className="more-btn" style={backStyle}>View more...</button>
             </Link>
-        </motion.div>
+        </div>
       </div>
     </div>
   )

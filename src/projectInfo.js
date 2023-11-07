@@ -136,6 +136,15 @@ let projectInfoArr = [
         techStack : ["WordPress"],
         projectLink : "https://a1codiology.wordpress.com/",
         duration : "5 days(development)"
+    },
+    {
+        id : "protype11",
+        siteName : "Protype",
+        editedImage : "./Resources/Web Projects/protype mockup.png",
+        techStack : ["React"],
+        duration : "3 days",
+        projectLink : "https://spacious74.github.io/typing-software/",
+        code : "https://github.com/Spacious74/typing-software.git"
     }
 ]
 

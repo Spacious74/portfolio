@@ -25,6 +25,8 @@ function DarkLightMode() {
     <div className="container" id="cont" style={containerStyle}>
         <button style={circleStyle}
          className="circle" id="circle" onClick={handleLightMode}>
+            { contextTheme.lightmode ?  <img src="https://img.icons8.com/external-glyph-silhouettes-icons-papa-vector/25/ffffff/external-Light-Mode-interface-glyph-silhouettes-icons-papa-vector.png" alt="light"/> : 
+            <img src="https://img.icons8.com/ios-glyphs/25/000000/moon-symbol.png" alt="moon-symbol"/>}
         </button>
     </div>
   )

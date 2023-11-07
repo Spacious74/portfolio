@@ -11,6 +11,9 @@ import tictac from '../../Resources/Web Projects/tic tac toe.png'
 import stone from '../../Resources/Web Projects/stone paper.png'
 import spline from '../../Resources/Web Projects/spline raw.png'
 import todo from '../../Resources/Web Projects/todo raw.png'
+import type from '../../Resources/Web Projects/protype.png'
+
+import projectInfoArr from '../../projectInfo'
 
 import Footer from '../Footer/Footer'
 
@@ -35,7 +38,10 @@ function MyWork() {
 
   return (
     <div className='workcontainer' style={backStyle}>
-      <div className="mainheading head">My work</div>
+      <div className="mainheading head">
+        <span>My Projects</span>
+        <span className='project-count'>Project count - {projectInfoArr.length}</span>
+      </div>
       <div className="myWork">
         <div className="subheading" style={{color : accColor}}>Full Stack Projects</div>
         <div className="projects-container">
@@ -99,6 +105,34 @@ function MyWork() {
       <div className="myWork">
         <div className="subheading" style={{color : accColor}}>React Frontend Projects</div>
         <div className="projects-container">
+
+            {/* Protype a typing practice software */}
+            <div className="projects" style={backStyle}>
+                <div className="project-image">
+                    <img src={type} alt="Google search clone website screenshot" className='pro-img' />
+                </div>
+                <div className="project-name">
+                    Protype (Typing practice app)
+                    <div className="pro-desc"
+                    style={{color: accColor}}>React</div>
+                </div>
+                <div className="button-cont">
+                <Link  to = "https://spacious74.github.io/typing-software/"
+                    className='procard-btn pro-active' target={"_blank"}
+                    style={{backgroundColor : accColor}}>
+                    <button className='inner-btn'>
+                        Visit Project
+                    </button>
+                </Link>
+                <Link  to = "/project-info/11"
+                    className='procard-btn' style={projectInfoStyle}>
+                    <button className='inner-btn' style={{color : accColor}}>
+                        Project Info
+                    </button>
+                </Link>
+                </div>
+            </div>
+
             {/* Google search clone */}
             <div className="projects" style={backStyle}>
                 <div className="project-image">

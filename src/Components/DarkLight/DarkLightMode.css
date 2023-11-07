@@ -17,4 +17,7 @@
   transition: all 400ms ease-in-out;
   border: solid 1px #000000;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

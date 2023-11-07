@@ -8,7 +8,7 @@
 .textSection{
     width: 80%;
     margin: auto;
-    height: 90vh;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
 }

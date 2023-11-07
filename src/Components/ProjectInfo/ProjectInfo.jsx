@@ -15,9 +15,10 @@ import stonepaper from '../../Resources/Web Projects/stone paper edited.png'
 import tictac from '../../Resources/Web Projects/tic tac edited.png';
 import spline from '../../Resources/Web Projects/spline.png'
 import wordpress from '../../Resources/Web Projects/wordpress edited.png'
+import type from '../../Resources/Web Projects/protype mockup.png'
 import ThemeContext from '../../themeContext'
 import {motion} from 'framer-motion'
-const imgArr = [showbox, shoppingbag, googleclone, quizapp , iphone, todo, stonepaper, tictac, spline, wordpress];
+const imgArr = [showbox, shoppingbag, googleclone, quizapp , iphone, todo, stonepaper, tictac, spline, wordpress, type];
 
 
 function ProjectInfo() {

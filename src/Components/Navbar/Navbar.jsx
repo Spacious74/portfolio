@@ -95,11 +95,13 @@ const Navbar = ()=> {
                 My resume
             </Link >
             <span className="navitems colorDropdown" style={{backgroundColor: accColor}}>
+            <img src="https://img.icons8.com/ios-glyphs/20/ffffff/paint-brush.png" alt="paint-brush"/>
             </span>
             <div className="dropdownItems">
                 <span className="colorDropdown" 
                 style={{backgroundColor: "#9d75c3"}} 
-                onClick={()=>{contextTheme.setAccColor("#9d75c3")}} ></span>
+                onClick={()=>{contextTheme.setAccColor("#9d75c3")}} >
+                </span>
                 <span className="colorDropdown" 
                 style={{backgroundColor: "#d8ba57"}} 
                 onClick={()=>{contextTheme.setAccColor("#d8ba57")}} ></span>

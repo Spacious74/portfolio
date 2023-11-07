@@ -6,6 +6,8 @@
   margin: auto;
   padding: 50px 0px 30px 0px;
   border-bottom: solid 1px #cacaca;
+  display: flex;
+  justify-content: space-between;
 }
 .myWork{
     width: 85%;
@@ -16,4 +18,9 @@
     font-family: "Tenor Sans";
     font-weight: bolder;
     padding-top: 20px;
+}
+
+.project-count{
+    font-size: 1rem;
+    font-weight: normal;
 }
