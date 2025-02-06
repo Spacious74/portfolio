@@ -12,7 +12,7 @@ import ProjectInfo from "./Components/ProjectInfo/ProjectInfo";
 
 function App() {
   const [lightmode, setLightMode] = useState(true);
-  const [accColor, setAccColor] = useState("#9d73c5");
+  const [accColor, setAccColor] = useState("#8424dd");
 
   const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 });
   useEffect(() => {

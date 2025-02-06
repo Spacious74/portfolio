@@ -1,79 +1,78 @@
-.icons{
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+.icons {
     display: inline;
     vertical-align: middle;
 }
-.outerHomeCont{
+
+.outerHomeCont {
     width: 100%;
 }
-.textSection{
-    width: 80%;
+
+.textSection {
+    width: 75%;
     margin: auto;
-    height: 100vh;
+    height: 90vh;
     flex-direction: column;
     justify-content: center;
 }
-.textSection .smtxt{
+
+.textSection .smtxt {
     font-size: 1.2rem;
     letter-spacing: 1px;
     text-align: center;
     margin-bottom: 15px;
 }
-.textSection .bgtxt{
+
+.textSection .bgtxt {
     font-size: 4rem;
     letter-spacing: 2px;
-    line-height: 1.5;
+    line-height: 1.1;
     text-align: center;
-    font-family: 'Tenor Sans';
-    text-transform: uppercase;
-}
-.bgtxt .txtunderline{
-    background-size: 100% 15px;
-    background-repeat: no-repeat;
-    background-position: bottom 15% left;
-    font-family: 'Tenor Sans';
-}
-.bgtxt p{
-    font-family: 'Tenor Sans';
-}
-.bgtxt .mainIcon{
-    color: #808080;
-}
-.bgtxt .iconContainer{
-    border: solid 1px #000;
-    padding: 10px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    vertical-align: middle;
-    border-radius: 200px;
-}
-.textSection .btnContainer{
-    justify-content: center;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
 }
 
-.mainbtn{
-    padding: 6px 20px;
+.bgtxt .txtunderline {
+    font-family: 'Clash Display', sans-serif;
+    position: relative;
+}
+.txtunderline svg{
+    /* width: 100px; */
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}
+
+
+.mainbtn {
+    padding: 8px 20px;
     font-size: 1.2rem;
     border-radius: 100px;
     border: solid 2px #000;
-    margin-top: 15px;
+    margin-top: 45px;
     color: #fff;
     transition: all 0.2s ease;
     cursor: pointer;
+    background-color: #8424dd;
 }
-.mainbtn:active{
+
+.mainbtn:active {
     transform: translateY(1px) scale(0.99);
 }
 
 
 
-
 @media screen and (max-width: 768px) {
-    .textSection .bgtxt{
-        font-size: 3rem;
+    .textSection {
+        width: 100%;
+        margin-top: -3.5rem;
+    }
+
+    .textSection .bgtxt {
+        font-size: 2.7rem;
         letter-spacing: 2px;
-        line-height: 1.5;
+        line-height: 1.2;
         text-align: center;
     }
 }

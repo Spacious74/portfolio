@@ -145,6 +145,15 @@ let projectInfoArr = [
         duration : "3 days",
         projectLink : "https://spacious74.github.io/typing-software/",
         code : "https://github.com/Spacious74/typing-software.git"
+    },
+    {
+        id : "overdrive12",
+        siteName : "Game Over Drive",
+        editedImage : "./Resources/Web Projects/overdrive-mockup.png",
+        techStack : ["Kaboom.js library", "Javascript"],
+        duration : "5 days",
+        projectLink : "https://spacious74.github.io/game-over-drive/",
+        code : "https://github.com/Spacious74/game-over-drive"
     }
 ]
 

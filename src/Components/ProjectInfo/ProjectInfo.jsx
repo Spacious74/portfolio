@@ -15,10 +15,11 @@ import stonepaper from '../../Resources/Web Projects/stone paper edited.png'
 import tictac from '../../Resources/Web Projects/tic tac edited.png';
 import spline from '../../Resources/Web Projects/spline.png'
 import wordpress from '../../Resources/Web Projects/wordpress edited.png'
-import type from '../../Resources/Web Projects/protype mockup.png'
+import ptype from '../../Resources/Web Projects/protype mockup.png';
+import game from '../../Resources/Web Projects/overdrive-mockup.png';
 import ThemeContext from '../../themeContext'
 import {motion} from 'framer-motion'
-const imgArr = [showbox, shoppingbag, googleclone, quizapp , iphone, todo, stonepaper, tictac, spline, wordpress, type];
+const imgArr = [showbox, shoppingbag, googleclone, quizapp , iphone, todo, stonepaper, tictac, spline, wordpress, ptype, game];
 
 
 function ProjectInfo() {
@@ -42,7 +43,6 @@ function ProjectInfo() {
 
     },[pindex, project]);   
     
-    
 
 
   return (
@@ -50,20 +50,12 @@ function ProjectInfo() {
         <div className="projectInfo">
             <div className="projectInfoImgCont">
 
-                <motion.img 
-                initial={{ opacity: 0, transform : "translateX(-140px)" }}
-                whileInView={{ opacity: 1, transform : "translateX(0px)" }}
-                transition={{ duration : 0.5 }}
-                viewport={{ once: true, amount: 0 }}
-                src={proImg} alt={project.siteName} />
+                <img src={proImg} alt={project.siteName}/>
 
                 <Link to={project.projectLink} target={"_blank"} className="btncont">
-                    <motion.button
-                    initial={{ opacity: 0, transform : "translateX(-140px)" }}
-                    whileInView={{ opacity: 1, transform : "translateX(0px)" }}
-                    transition={{ duration : 0.5, delay : 0.2}}
-                    viewport={{ once: true, amount: 0.8 }}
-                    className='visitBtn' style={{backgroundColor : accColor}}>Visit Project&nbsp; <i className="fa-solid fa-paper-plane"></i></motion.button>
+                    <button className='visitBtn' style={{backgroundColor : accColor}}>
+                        Visit Project&nbsp; <i className="fa-solid fa-paper-plane"></i>
+                    </button>
                 </Link>
 
             </div>
@@ -74,6 +66,7 @@ function ProjectInfo() {
                 transition={{ duration : 0.5 }}
                 viewport={{ once: true, amount: 0.8 }}
                 className="siteName">{project.siteName}</motion.div>
+
                 <motion.div 
                 initial={{ opacity: 0, transform : "translateY(100px)" }}
                 whileInView={{ opacity: 1, transform : "translateY(0px)" }}
@@ -86,6 +79,7 @@ function ProjectInfo() {
                         })
                     }
                 </motion.div>
+
                 <motion.div 
                 initial={{ opacity: 0, transform : "translateY(100px)" }}
                 whileInView={{ opacity: 1, transform : "translateY(0px)" }}
@@ -94,6 +88,7 @@ function ProjectInfo() {
                 className="duration">
                 <span className="proptitle" style={{color : accColor}}><i className="fa-solid fa-clock tech-icon"></i>&nbsp; Duration</span> - {project.duration}
                 </motion.div>
+
                 <motion.div 
                 initial={{ opacity: 0, transform : "translateY(100px)" }}
                 whileInView={{ opacity: 1, transform : "translateY(0px)" }}

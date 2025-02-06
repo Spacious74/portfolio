@@ -20,7 +20,6 @@ function HMyWork() {
     const backStyle  = {
         backgroundColor: contextTheme.lightmode ? "#f3f3f3" : "#26242C",
         color : contextTheme.lightmode ? "#000" : "#fff",
-        borderColor : accColor
     }
     
     const projectInfoStyle = {
@@ -31,16 +30,11 @@ function HMyWork() {
   return (
     <div className='hmywork-container'>
       <div className="myWork">
-        <div className="heading">My Work</div>
+        <div className="heading">What I’ve Built</div>
         <div className="projects-container">
 
             {/* Show box */}
-            <motion.div
-            initial={{ opacity: 0, transform : "translateY(140px)" }}
-            whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-            transition={{duration : 0.5}}
-            viewport={{ once: true, amount: 0.8 }}
-             className="projects" style={backStyle}>
+            <div className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={show} alt="show box website screenshot" className='pro-img' />
                 </div>
@@ -64,15 +58,10 @@ function HMyWork() {
                     </button>
                 </Link>
                 </div>
-            </motion.div>
+            </div>
 
             {/* Shopping bag */}
-            <motion.div 
-            initial={{ opacity: 0, transform : "translateY(140px)" }}
-            whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-            transition={{duration : 0.5, delay: 0.2}}
-            viewport={{ once: true, amount: 0.8 }}
-            className="projects" style={backStyle}>
+            <div className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={shopping} alt="show box website screenshot" className='pro-img' />
                 </div>
@@ -96,15 +85,10 @@ function HMyWork() {
                     </button>
                 </Link>
                 </div>
-            </motion.div>
+            </div>
 
             {/* IPhone clone */}
-            <motion.div 
-            initial={{ opacity: 0, transform : "translateY(140px)" }}
-            whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-            transition={{duration : 0.5, delay: 0.4}}
-            viewport={{ once: true, amount: 0.8 }}
-            className="projects" style={backStyle}>
+            <div className="projects" style={backStyle}>
 
                 <div className="project-image">
                     <img src={iphone} alt="show box website screenshot" className='pro-img' />
@@ -129,15 +113,10 @@ function HMyWork() {
                     </button>
                     </Link>
                 </div>
-            </motion.div>
+            </div>
 
             {/* Wordpress website */}
-            <motion.div 
-            initial={{ opacity: 0, transform : "translateY(140px)" }}
-            whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-            transition={{duration : 0.5, delay: 0.2}}
-            viewport={{ once: true, amount: 0.8 }}
-            className="projects" style={backStyle}>
+            <div className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={wordpress} alt="show box website screenshot" className='pro-img' />
                 </div>
@@ -161,15 +140,10 @@ function HMyWork() {
                     </button>
                     </Link>
                 </div>
-            </motion.div>
+            </div>
 
             {/* Spline */}
-            <motion.div 
-            initial={{ opacity: 0, transform : "translateY(140px)" }}
-            whileInView={{ opacity: 1, transform : "translateY(0px)" }}
-            transition={{duration : 0.5, delay : 0.4}}
-            viewport={{ once: true, amount: 0.8 }}
-            className="projects" style={backStyle}>
+            <div className="projects" style={backStyle}>
                 <div className="project-image">
                     <img src={spline} alt="show box website screenshot" className='pro-img' />
                 </div>
@@ -193,7 +167,7 @@ function HMyWork() {
                     </button>
                     </Link>
                 </div>
-            </motion.div>
+            </div>
         </div>
         <div 
         className="btn-container fxcn">

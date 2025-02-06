@@ -2,10 +2,9 @@
     width: 65%;
     margin: auto;
     height: 100vh;
+    padding: 40px 0px;
 }
-.aboutSection .imageSection{
-    display: none;
-}
+
 .aboutSection .abbouttext{
     width: 100%;
 }
@@ -16,24 +15,19 @@
 }
 .abbouttext .smtxt .heading{
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
     font-weight: bolder;
     letter-spacing: 2px;
-    font-family: 'Tenor Sans';
+    font-family: 'Clash Display', sans-serif;
     text-align: center;
 }
 .btext{
-    border: solid 1px #000;
-    padding: 0px 10px;
-    border-radius: 100px;
     letter-spacing: 3px;
     font-weight: 900;
 }
 .abbouttext p{
-    margin-bottom: 10px;
-}
-.abbouttext .mainbtn{
-    margin-top: 0px;
+    margin-bottom: 25px;
+    text-align: justify;
 }
 
 
@@ -47,7 +41,7 @@
 .aboutSection .btnPara{
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .aboutSection .mainImg{
@@ -60,6 +54,10 @@
 .resHead{
     display: none;
 }
+.btnContainer{
+    position: relative;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -68,25 +66,19 @@
         align-items: center;    
         justify-content: center;
         gap: 30px;
-        height: 80vh;
         width: 85%;
     }
     .aboutSection .abbouttext{
         width: 100%;
     }
-    .abbouttext .smtxt{
+    .abbouttext p{
         font-size: 1.1rem;
+        text-align: left;
     }
     .aboutSection .btnPara{
         flex-direction: column;
         gap: 10px;
         align-items: start;
-    }
-    .aboutSection .imageSection .mainImg{
-        width: 100%;
-        height: auto;
-        box-shadow: none !important;
-        border-radius: 40px;
     }
     .abbouttext .smtxt .heading{
         display: none;
@@ -96,7 +88,7 @@
         font-size: 1.5rem;
         font-weight: bolder;
         letter-spacing: 2px;
-        font-family: 'Tenor Sans';
+        font-family: 'Clash Display', sans-serif;
         text-align: left;
         width: 100%;
         border-bottom: solid 2px #cacaca;

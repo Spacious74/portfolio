@@ -107,11 +107,15 @@ a{
 @media screen and (max-width: 768px) {
 
     .navbar{
-        width: 95%;
+        width: 85%;
+        padding: 18px 0px;
     }
-    
+    .colorDropdown{
+        width: 25px;
+        height: 25px;
+    }
     .navbar .dropdownItems{
-        right: 12.7%;
+        right: 0.5%;
         top: 80%;
     }
     .navbar .right{
@@ -131,23 +135,6 @@ a{
         flex-direction: column;
         z-index: 100;
     }
-    .hamBurger .hamLines{
-        width: 30px;
-        height: 3px;
-        background-color: #000;
-        display: block;
-        border-radius: 50px;
-        transition: all 0.3s ease-in-out;
-    }
-    .hamBurger .hl1{
-        transform: rotate(45deg) translate(6px,7px);
-    }
-    .hamBurger .hl2{
-        opacity: 1;
-    }
-    .hamBurger .hl3{
-        transform: rotate(-45deg) translate(6px,-7px);
-    }
     .resToggler{
         display: flex;
         gap: 10px;
@@ -156,16 +143,27 @@ a{
     }
     .res-nav-link-cont{
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 50px;
-        padding: 50px 0px;
-        border-bottom: solid 1px #cacaca;
-        position: absolute;
-        width: 100%;
-        top: 0;
+        justify-content: space-between;
+        padding: 15px 20px;
+        border: solid 2px #8d8d8d;
+        border-radius: 999px;
+        position: fixed; 
+        width: 85vw;
+        bottom: 10px; left: 50%;
+        transform: translate(-50%, 0);
         z-index: 20;
         transition: all 0.3s ease-in-out;
+        background-color: #ececec77 !important;
+        backdrop-filter: blur(16px);
     }
+    .res-nav-link-cont .navitems{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 14px;
+    }
+
 }

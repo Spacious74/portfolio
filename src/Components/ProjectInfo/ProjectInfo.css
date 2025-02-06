@@ -9,7 +9,6 @@
     width: 85%;
     margin: auto;
     margin-bottom: 50px;
-    height: 70vh;
 }
 
 .projectInfo .projectInfoImgCont{
@@ -32,7 +31,8 @@
     font-weight: bolder;
     color: #fff;
     border-radius: 100px;
-    border : solid 1px #fff
+    border : solid 1px #fff;
+    display: block;
 }
 .projectInfo .projectInfoText{
     width: 50%;
@@ -103,7 +103,7 @@
     .projectInfo-container .projectInfo{
         flex-direction: column;
         width: 90%;
-        height: 80vh;
+        gap: 20px;
     }    
     .projectInfo .projectInfoImgCont{
         width: 100%;
