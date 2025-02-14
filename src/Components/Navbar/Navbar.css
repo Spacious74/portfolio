@@ -1,169 +1,167 @@
-a{
-    text-decoration: none;
-    color: #1d1d1d;
+a {
+  text-decoration: none;
+  color: #1d1d1d;
 }
-.fxcn{
+.fxcn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar {
+  width: 85%;
+  margin: auto;
+  margin-right: 8%;
+  padding: 12px 0px;
+  position: relative;
+  color: #5bbd42;
+}
+.colorDropdown {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 2px;
+  border: solid 5px #fff;
+}
+.colorDropdown:hover + .dropdownItems {
+  display: flex;
+}
+
+.navbar .dropdownItems {
+  flex-direction: column;
+  position: absolute;
+  right: 5.5em;
+  top: 74%;
+  background-color: #fff;
+  box-shadow: 0px 0px 1px #000, 0px 10px 20px #00000023;
+  display: none;
+  cursor: pointer;
+  border-radius: 100px;
+}
+.navbar .dropdownItems:hover {
+  display: flex;
+}
+
+.left .logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: solid 2px;
+  border-radius: 100px;
+  width: 80px;
+  justify-content: center;
+}
+.navbar .right {
+  justify-content: right;
+}
+.right .navitems {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.right .navitems:hover {
+  color: #fff;
+}
+
+.underline {
+  background-size: 0%;
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: solid 1px #00000000;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  transition: all 0.4s ease-in-out;
+}
+.underline:hover {
+  background-size: 100%;
+  border: solid 1px #000;
+  color: #fff;
+}
+.active {
+  border: solid 1px #000;
+  border-radius: 50px;
+  color: #fff;
+}
+.responsive-nav {
+  display: none;
+}
+.hamBurger {
+  display: none;
+}
+.resToggler {
+  display: none;
+}
+.res-nav-link-cont {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 85%;
+    padding: 18px 0px;
+  }
+  .colorDropdown {
+    width: 25px;
+    height: 25px;
+  }
+  .navbar .dropdownItems {
+    right: 0.5%;
+    top: 80%;
+  }
+  .navbar .right {
+    display: none;
+  }
+  .responsive-nav {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .hamBurger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-direction: column;
+    z-index: 100;
+  }
+  .resToggler {
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .res-nav-link-cont {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.nav-container{
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-.navbar{
-    width: 85%;
-    margin: auto;
-    padding: 12px 0px;
-    position: relative;
-    color: #5bbd42;
-}
-.colorDropdown{
-    width: 25px;
-    height: 25px;
+    padding: 15px 20px;
+    border: solid 2px #8d8d8d;
+    border-radius: 999px;
+    position: fixed;
+    width: 85vw;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+    background-color: #ececec77 !important;
+    backdrop-filter: blur(16px);
+  }
+  .res-nav-link-cont .navitems {
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
-    padding: 2px;
-    border: solid 5px #fff;
-}
-.colorDropdown:hover + .dropdownItems{
-    display: flex;
-}
-
-.navbar .dropdownItems{
-    flex-direction: column;
-    position: absolute;
-    right: 7.7%;
-    top: 74%;
-    background-color: #fff;
-    box-shadow: 0px 0px 1px #000,0px 10px 20px #00000023;
-    display: none;
-    cursor: pointer;
-    border-radius: 100px;
-}
-.navbar .dropdownItems:hover{
-    display: flex;
-}
-
-.left .logo{
-    font-size: 1.4rem;
-    font-weight: 600;
-    border: solid 2px;
-    border-radius: 100px;
-    width: 80px;
-    justify-content: center;
-}
-.navbar .right{
-    justify-content: right;
-}
-.right .navitems{
-    margin-left: 1rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-.right .navitems:hover{
-    color: #fff;
-}
-
-.underline{
-    background-size: 0%;
-    padding: 3px 10px;
-    border-radius: 100px;
-    border: solid 1px #00000000;
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    transition: all 0.4s ease-in-out;
-}
-.underline:hover{
-    background-size: 100%;
-    border: solid 1px #000;
-    color: #fff;
-}
-.active{
-    border: solid 1px #000;
-    border-radius: 50px;
-    color: #fff;
-}
-.responsive-nav{
-    display: none;
-}
-.hamBurger{
-    display: none;
-}
-.resToggler{
-    display: none;
-}
-.res-nav-link-cont{
-    display: none;
-}
-
-
-
-@media screen and (max-width: 768px) {
-
-    .navbar{
-        width: 85%;
-        padding: 18px 0px;
-    }
-    .colorDropdown{
-        width: 25px;
-        height: 25px;
-    }
-    .navbar .dropdownItems{
-        right: 0.5%;
-        top: 80%;
-    }
-    .navbar .right{
-        display: none;
-    }
-    .responsive-nav{
-        display: block;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-    .hamBurger{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-        flex-direction: column;
-        z-index: 100;
-    }
-    .resToggler{
-        display: flex;
-        gap: 10px;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-    .res-nav-link-cont{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 20px;
-        border: solid 2px #8d8d8d;
-        border-radius: 999px;
-        position: fixed; 
-        width: 85vw;
-        bottom: 10px; left: 50%;
-        transform: translate(-50%, 0);
-        z-index: 20;
-        transition: all 0.3s ease-in-out;
-        background-color: #ececec77 !important;
-        backdrop-filter: blur(16px);
-    }
-    .res-nav-link-cont .navitems{
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        padding: 8px 14px;
-    }
-
+    gap: 8px;
+    padding: 8px 14px;
+  }
 }
